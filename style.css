@@ -1,0 +1,43 @@
+/* styles.css */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "navbar"
+    "container"
+    "footer";
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5dc; /* Color de fondo beige claro */
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #8b4513; /* Color marrón oscuro para la barra de navegación */
+  padding: 10px;
+  color: white;
+}
+
+.container {
+  grid-area: container;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 10px;
+}
+
+.sidebar {
+  background-color: #d2b48c; /* Color marrón claro para la barra lateral */
+  padding: 10px;
+}
+
+.content {
+  background-color: #deb887; /* Color marrón claro para el contenido principal */
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #8b4513; /* Color marrón oscuro para el pie de página */
+  padding: 10px;
+  color: white;
+}
